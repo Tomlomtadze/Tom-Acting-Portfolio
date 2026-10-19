@@ -497,3 +497,26 @@ position: sticky !important;
 top: 0;
 z-index: 1000;
 }
+</section>
+
+<section id="about" class="section about-section">
+<p class="section-label">ABOUT</p>
+
+<h2>Grounded. Character-driven. Film focused.</h2>
+
+<p>
+Temur Lomtadze is a South Florida-based actor with experience
+in film and theatre, originally from Georgia and previously based
+in New York. His work focuses on grounded, truthful performances
+and character-driven storytelling for film and television.
+</p>
+</section>
+.about-section {
+padding-top: 180px !important;
+padding-bottom: 120px !important;
+}
+
+.about-section h2 {
+font-size: clamp(32px, 4vw, 52px);
+line-height: 1.05;
+}
