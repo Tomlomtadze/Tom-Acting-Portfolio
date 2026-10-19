@@ -456,3 +456,30 @@ overflow: hidden;
 position: relative;
 z-index: 2;
 }
+.hero,
+.hero-content,
+main,
+section {
+position: relative !important;
+}
+
+.hero {
+z-index: 1 !important;
+}
+
+main,
+section {
+z-index: 2 !important;
+}
+
+.site-header {
+position: sticky !important;
+top: 0;
+z-index: 100 !important;
+}
+
+.overlay,
+.hero-overlay,
+.background-overlay {
+display: none !important;
+}
