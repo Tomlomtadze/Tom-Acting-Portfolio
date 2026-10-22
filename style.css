@@ -534,3 +534,22 @@ color: #b8b0a6;
 max-width: 650px;
 margin-bottom: 28px;
 }
+.resume-section {
+padding-top: 120px;
+padding-bottom: 120px;
+border-top: 1px solid rgba(166, 124, 82, 0.22);
+}
+
+.resume-section h2 {
+font-size: clamp(32px, 4vw, 52px);
+line-height: 1.05;
+margin-bottom: 18px;
+}
+
+.resume-copy {
+max-width: 620px;
+color: #b8b0a6;
+font-size: 17px;
+line-height: 1.6;
+margin-bottom: 30px;
+}
