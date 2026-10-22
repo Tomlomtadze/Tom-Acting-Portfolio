@@ -62,3 +62,54 @@ View Film
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Film | Temur Lomtadze</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<nav class="navbar">
+
+<a href="index.html" class="logo">TEMUR LOMTADZE</a>
+
+<div class="nav-links">
+<a href="film.html" class="active">Film</a>
+<a href="reels.html">Reels</a>
+<a href="resume.html">Résumé</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+</header>
+
+<main class="page">
+
+<p class="page-label">Featured Film</p>
+
+<h1>I Love You</h1>
+
+<p class="lead">
+Lead Role • Short Film
+</p>
+
+<div class="video-wrapper">
+
+<iframe
+src="https://www.youtube.com/embed/ZfWyTJ6rYg8"
+title="I Love You"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</main>
+
+</body>
+</html>
