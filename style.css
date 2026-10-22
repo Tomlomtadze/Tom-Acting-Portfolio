@@ -520,3 +520,17 @@ padding-bottom: 120px !important;
 font-size: clamp(32px, 4vw, 52px);
 line-height: 1.05;
 }
+#resume {
+border-top: 1px solid rgba(166, 124, 82, 0.22);
+}
+
+#resume h2 {
+font-size: clamp(32px, 4vw, 52px);
+margin-bottom: 18px;
+}
+
+#resume p {
+color: #b8b0a6;
+max-width: 650px;
+margin-bottom: 28px;
+}
