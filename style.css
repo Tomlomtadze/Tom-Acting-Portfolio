@@ -574,3 +574,23 @@ font-size: 17px;
 line-height: 1.6;
 margin-bottom: 30px;
 }
+
+#featured-film,
+#reel,
+#resume,
+#contact {
+border-top: 1px solid var(--line) !important;
+}
+
+.reel-card h3 {
+color: var(--black) !important;
+}
+
+.video-wrapper {
+background: var(--black);
+}
+
+#resume .button.primary {
+background: var(--red) !important;
+color: white !important;
+}
