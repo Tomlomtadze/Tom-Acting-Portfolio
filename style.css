@@ -298,4 +298,172 @@ grid-template-columns: 1fr;
 padding: 55px 22px 80px;
 }
 }
+/* =========================
 
+   RESUME PAGE
+
+========================= */
+
+.resume-page {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 65px 34px 100px;
+
+}
+
+.resume-section {
+
+  margin-bottom: 70px;
+
+}
+
+.resume-section-title {
+
+  display: inline-block;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 6vw, 58px);
+
+  line-height: 1;
+
+  margin: 0 0 32px;
+
+  border-bottom: 3px solid var(--red);
+
+  padding-bottom: 8px;
+
+}
+
+.resume-list {
+
+  background: white;
+
+  border: 1px solid var(--line);
+
+}
+
+.resume-entry {
+
+  padding: 28px 32px;
+
+  border-bottom: 1px solid var(--line);
+
+}
+
+.resume-entry:last-child {
+
+  border-bottom: none;
+
+}
+
+.resume-entry h3 {
+
+  margin: 0 0 11px;
+
+  font-size: 23px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+}
+
+.resume-entry p {
+
+  margin: 0 0 9px;
+
+  font-size: 20px;
+
+  line-height: 1.4;
+
+}
+
+.resume-entry span {
+
+  display: block;
+
+  color: var(--gray);
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+}
+
+.resume-download {
+
+  margin-top: 90px;
+
+  border-top: 1px solid var(--line);
+
+  padding-top: 50px;
+
+}
+
+.resume-download h2 {
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 38px;
+
+  margin: 8px 0 28px;
+
+}
+
+/* =========================
+
+   MOBILE RESUME
+
+========================= */
+
+@media (max-width: 750px) {
+
+  .resume-page {
+
+    padding: 48px 22px 80px;
+
+  }
+
+  .resume-section {
+
+    margin-bottom: 55px;
+
+  }
+
+  .resume-section-title {
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+
+  }
+
+  .resume-entry {
+
+    padding: 25px 22px;
+
+  }
+
+  .resume-entry h3 {
+
+    font-size: 21px;
+
+  }
+
+  .resume-entry p {
+
+    font-size: 19px;
+
+  }
+
+  .resume-entry span {
+
+    font-size: 17px;
+
+  }
+
+}
