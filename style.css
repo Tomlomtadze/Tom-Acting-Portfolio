@@ -553,3 +553,24 @@ font-size: 17px;
 line-height: 1.6;
 margin-bottom: 30px;
 }
+
+.resume-section .section-label {
+color: #a67c52;
+letter-spacing: 2px;
+font-size: 12px;
+margin-bottom: 14px;
+}
+
+.resume-section h2 {
+font-size: clamp(32px, 4vw, 52px);
+line-height: 1.05;
+margin-bottom: 18px;
+}
+
+.resume-copy {
+max-width: 620px;
+color: #b8b0a6;
+font-size: 17px;
+line-height: 1.6;
+margin-bottom: 30px;
+}
