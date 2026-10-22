@@ -1,20 +1,11 @@
-/* =========================
-TEMUR LOMTADZE
-ACTOR PORTFOLIO
-========================= */
-
 :root {
 --black: #111111;
---cream: #f4f0e8;
---white: #ffffff;
---red: #8f2f27;
---red-dark: #74251f;
---gray: #746e67;
---light-gray: #d9d1c5;
---soft-gray: #ebe5dc;
+--white: #f7f4ee;
+--red: #992f28;
+--dark-red: #78231e;
+--gray: #716b64;
+--line: #ded7cd;
 }
-
-/* RESET */
 
 * {
 box-sizing: border-box;
@@ -26,10 +17,14 @@ scroll-behavior: smooth;
 
 body {
 margin: 0;
-background: var(--cream);
+background: var(--white);
 color: var(--black);
 font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
+}
+
+a {
+text-decoration: none;
+color: inherit;
 }
 
 img {
@@ -37,496 +32,270 @@ max-width: 100%;
 display: block;
 }
 
-a {
-text-decoration: none;
-}
-
-iframe {
-border: 0;
-}
-
-/* =========================
-HEADER / NAV
-========================= */
+/* NAV */
 
 .site-header {
-width: 100%;
-min-height: 0 !important;
-height: auto !important;
-padding: 0 !important;
-
-background: var(--cream) !important;
-border-bottom: 1px solid var(--light-gray);
-
+background: var(--white);
+border-bottom: 1px solid var(--line);
 position: sticky;
 top: 0;
 z-index: 1000;
 }
 
 .navbar {
-width: 100%;
 max-width: 1200px;
-margin: 0 auto;
-
+margin: auto;
 padding: 24px 34px;
-
 display: flex;
-align-items: center;
 justify-content: space-between;
-gap: 30px;
+align-items: center;
 }
 
 .logo {
-color: var(--black);
 font-family: Georgia, "Times New Roman", serif;
-font-size: 25px;
+font-size: 24px;
 font-weight: 700;
 letter-spacing: 0.08em;
 }
 
 .nav-links {
 display: flex;
-align-items: center;
 gap: 28px;
 }
 
 .nav-links a {
-color: var(--gray);
-font-size: 14px;
-font-weight: 600;
-letter-spacing: 0.06em;
+font-size: 13px;
 text-transform: uppercase;
-
-transition: 0.2s ease;
+letter-spacing: 0.08em;
+color: var(--gray);
+padding-bottom: 4px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
 color: var(--red);
+border-bottom: 2px solid var(--red);
 }
 
-/* =========================
-HERO
-========================= */
+/* HOME */
 
-.hero {
-min-height: 82vh;
-
+.home {
+min-height: calc(100vh - 78px);
 background: var(--black);
-color: var(--white);
-
+color: white;
 display: flex;
 align-items: center;
-justify-content: center;
-
-text-align: center;
-padding: 110px 28px 90px;
-
-position: relative;
-overflow: hidden;
 }
 
-.hero::before,
-.hero::after {
-display: none !important;
-}
-
-.hero-content {
+.home-inner {
 width: 100%;
-max-width: 980px;
-margin: 0 auto;
-
-position: relative;
-z-index: 2;
+max-width: 1200px;
+margin: auto;
+padding: 70px 60px;
 }
 
 .eyebrow {
-margin: 0 0 22px;
-
 color: var(--red);
+letter-spacing: 0.25em;
 font-size: 13px;
-font-weight: 700;
-letter-spacing: 0.22em;
+font-weight: bold;
 text-transform: uppercase;
 }
 
-.hero h1 {
-margin: 0;
-
+.home h1 {
 font-family: Georgia, "Times New Roman", serif;
-font-size: clamp(58px, 10vw, 118px);
+font-size: clamp(60px, 10vw, 120px);
+line-height: 0.9;
+margin: 18px 0 24px;
 font-weight: 600;
-line-height: 0.95;
-letter-spacing: 0.02em;
 }
 
-.hero-location {
-margin: 28px 0 0;
-
-color: #d2cbc3;
-font-size: 14px;
-font-weight: 600;
-letter-spacing: 0.14em;
+.home-meta {
+color: #d3ccc4;
+letter-spacing: 0.12em;
 text-transform: uppercase;
+font-size: 14px;
 }
 
-.hero-buttons {
-margin-top: 36px;
-
+.home-actions {
+margin-top: 34px;
 display: flex;
-justify-content: center;
-flex-wrap: wrap;
 gap: 14px;
 }
 
-/* =========================
-BUTTONS
-========================= */
-
 .button {
-display: inline-block;
-
 padding: 15px 24px;
-
 font-size: 13px;
-font-weight: 700;
-letter-spacing: 0.06em;
+font-weight: bold;
+letter-spacing: 0.07em;
 text-transform: uppercase;
-
-transition: 0.2s ease;
+display: inline-block;
 }
 
-.button.primary {
+.button-red {
 background: var(--red);
-color: var(--white);
-border: 1px solid var(--red);
+color: white;
 }
 
-.button.primary:hover {
-background: var(--red-dark);
-border-color: var(--red-dark);
+.button-red:hover {
+background: var(--dark-red);
 }
 
-.button.secondary {
-background: transparent;
-color: var(--white);
-border: 1px solid rgba(255, 255, 255, 0.85);
+.button-outline {
+border: 1px solid white;
+color: white;
 }
 
-.button.secondary:hover {
-background: var(--white);
-color: var(--black);
+.button-outline:hover {
+background: white;
+color: black;
 }
 
-/* =========================
-GLOBAL SECTIONS
-========================= */
+/* NORMAL PAGES */
 
-.section {
-width: 100%;
-max-width: 1180px;
-
-margin: 0 auto;
-padding: 110px 34px;
-
-background: var(--cream);
-color: var(--black);
+.page {
+max-width: 1100px;
+margin: auto;
+padding: 75px 34px 100px;
 }
 
-.section + .section {
-border-top: 1px solid var(--light-gray);
-}
-
-.section-label {
-margin: 0 0 16px;
-
+.page-label {
 color: var(--red);
-font-size: 13px;
-font-weight: 700;
-letter-spacing: 0.16em;
 text-transform: uppercase;
+letter-spacing: 0.18em;
+font-size: 13px;
+font-weight: bold;
+margin-bottom: 8px;
 }
 
-.section h2 {
-margin: 0 0 26px;
-
+.page h1 {
 font-family: Georgia, "Times New Roman", serif;
-font-size: clamp(38px, 5vw, 62px);
-font-weight: 600;
-line-height: 1.05;
-color: var(--black);
+font-size: clamp(44px, 7vw, 74px);
+margin: 0 0 25px;
+line-height: 1;
 }
 
-.section p {
-color: var(--gray);
+.page h2 {
+font-family: Georgia, "Times New Roman", serif;
+font-size: 36px;
+margin-top: 50px;
 }
 
-/* =========================
-ABOUT
-========================= */
-
-.about-section {
-padding-top: 130px;
-padding-bottom: 130px;
-}
-
-.about-section h2 {
-max-width: 850px;
-}
-
-.about-section p:last-child {
+.lead {
 max-width: 760px;
-
-margin: 0;
-
 color: var(--gray);
 font-size: 18px;
-line-height: 1.75;
+line-height: 1.7;
 }
 
-/* =========================
-FEATURED FILM
-========================= */
-
-#featured-film {
-padding-top: 110px;
-padding-bottom: 110px;
-}
-
-.featured-film {
-margin-top: 30px;
-}
-
-.featured-film h3 {
-margin: 0 0 6px;
-
-font-family: Georgia, "Times New Roman", serif;
-font-size: 34px;
-font-weight: 600;
-color: var(--black);
-}
-
-.featured-film p {
-margin: 0 0 24px;
-
-color: var(--gray);
-font-size: 16px;
-}
-
-/* =========================
-VIDEO WRAPPER
-========================= */
+/* VIDEOS */
 
 .video-wrapper {
 width: 100%;
 aspect-ratio: 16 / 9;
-
-background: var(--black);
-overflow: hidden;
+background: #000;
+margin-top: 30px;
 }
 
 .video-wrapper iframe {
 width: 100%;
 height: 100%;
-display: block;
-}
-
-/* =========================
-REELS
-========================= */
-
-#reel {
-padding-top: 110px;
-padding-bottom: 110px;
+border: 0;
 }
 
 .reel-grid {
 display: grid;
-grid-template-columns: repeat(2, minmax(0, 1fr));
-gap: 42px 34px;
-
-margin-top: 34px;
-}
-
-.reel-card {
-width: 100%;
+grid-template-columns: repeat(2, 1fr);
+gap: 34px;
+margin-top: 35px;
 }
 
 .reel-card h3 {
-margin: 0 0 12px;
-
-color: var(--black);
 font-size: 14px;
-font-weight: 700;
-letter-spacing: 0.09em;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+margin-bottom: 10px;
+}
+
+/* RESUME */
+
+.resume-box {
+margin-top: 45px;
+padding: 40px;
+border: 1px solid var(--line);
+background: white;
+}
+
+.resume-button {
+background: var(--red);
+color: white;
+padding: 16px 26px;
+display: inline-block;
+font-weight: bold;
+letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 
-/* =========================
-RESUME
-========================= */
+/* ABOUT */
 
-.resume-section {
-padding-top: 120px;
-padding-bottom: 120px;
-}
-
-.resume-section h2 {
+.about-copy {
 max-width: 760px;
 }
 
-.resume-copy {
-max-width: 640px;
-
-margin: 0 0 30px;
-
-color: var(--gray);
-font-size: 17px;
-line-height: 1.7;
-}
-
-.resume-section .button.primary {
-margin-top: 4px;
-}
-
-/* =========================
-CONTACT
-========================= */
-
-#contact {
-padding-top: 120px;
-padding-bottom: 120px;
-}
-
-#contact h2 {
-margin-bottom: 22px;
-}
-
-#contact p {
-max-width: 680px;
-margin-bottom: 22px;
-
+.about-copy p {
 color: var(--gray);
 font-size: 18px;
+line-height: 1.8;
 }
 
-#contact a {
+/* CONTACT */
+
+.contact-box {
+margin-top: 40px;
+border: 1px solid var(--line);
+background: white;
+padding: 38px;
+}
+
+.contact-box a {
 color: var(--red);
-font-weight: 700;
+font-weight: bold;
 }
 
-#contact a:hover {
-color: var(--red-dark);
-}
+/* MOBILE */
 
-/* =========================
-OPTIONAL CLEAN CARDS
-========================= */
-
-.card {
-background: var(--white);
-border: 1px solid var(--light-gray);
-padding: 28px;
-}
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-.navbar {
-padding: 22px 24px;
-}
-
-.nav-links {
-gap: 18px;
-}
-
-.nav-links a {
-font-size: 12px;
-}
-
-.hero {
-min-height: 72vh;
-padding-top: 90px;
-}
-
-.section {
-padding-left: 24px;
-padding-right: 24px;
-}
-}
-
-@media (max-width: 700px) {
-.site-header {
-position: relative;
-}
-
+@media (max-width: 750px) {
 .navbar {
 flex-direction: column;
 align-items: flex-start;
 gap: 18px;
+padding: 22px;
 }
 
 .nav-links {
-width: 100%;
-
-display: flex;
 flex-wrap: wrap;
-gap: 14px 18px;
+gap: 14px 20px;
 }
 
-.logo {
-font-size: 23px;
+.home {
+min-height: calc(100vh - 130px);
 }
 
-.hero {
-min-height: 68vh;
-padding: 85px 20px 70px;
+.home-inner {
+padding: 55px 24px;
 }
 
-.hero h1 {
-font-size: clamp(52px, 16vw, 82px);
-}
-
-.hero-location {
-font-size: 12px;
-}
-
-.hero-buttons {
+.home-actions {
 flex-direction: column;
-align-items: center;
-}
-
-.button {
-width: 100%;
-max-width: 260px;
-text-align: center;
-}
-
-.section {
-padding: 80px 20px;
-}
-
-.about-section {
-padding-top: 90px;
-padding-bottom: 90px;
-}
-
-.section h2 {
-font-size: clamp(34px, 10vw, 48px);
-}
-
-.about-section p:last-child,
-#contact p {
-font-size: 16px;
+max-width: 250px;
 }
 
 .reel-grid {
 grid-template-columns: 1fr;
-gap: 34px;
 }
 
-.featured-film h3 {
-font-size: 28px;
+.page {
+padding: 55px 22px 80px;
 }
 }
+
