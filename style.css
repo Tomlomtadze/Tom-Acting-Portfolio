@@ -651,3 +651,96 @@ font-size: 18px;
 line-height: 1.7;
 }
 }
+/* =========================
+CONTACT PAGE
+========================= */
+
+.contact-page {
+max-width: 900px;
+margin: 0 auto;
+padding: 80px 34px 110px;
+}
+
+.contact-page h1 {
+font-family: Georgia, "Times New Roman", serif;
+font-size: clamp(50px, 8vw, 82px);
+line-height: 1;
+margin: 0 0 28px;
+}
+
+.contact-intro {
+max-width: 700px;
+
+font-size: 20px;
+line-height: 1.7;
+
+color: var(--gray);
+
+margin-bottom: 50px;
+}
+
+.contact-card {
+background: white;
+
+border: 1px solid var(--line);
+
+padding: 35px;
+
+margin-bottom: 35px;
+}
+
+.contact-small {
+margin: 0 0 12px;
+
+color: var(--red);
+
+font-size: 13px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+
+.contact-email {
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: clamp(24px, 4vw, 38px);
+
+color: var(--black);
+
+border-bottom: 2px solid var(--red);
+
+padding-bottom: 4px;
+}
+
+.contact-email:hover {
+color: var(--red);
+}
+
+.contact-note {
+max-width: 650px;
+
+color: var(--gray);
+
+font-size: 17px;
+line-height: 1.7;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+.contact-page {
+padding: 55px 22px 85px;
+}
+
+.contact-intro {
+font-size: 18px;
+}
+
+.contact-card {
+padding: 26px 22px;
+}
+
+}
