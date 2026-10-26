@@ -832,3 +832,129 @@ font-size: 18px;
 line-height: 1.7;
 }
 }
+/* =========================
+NEW CONTACT PAGE
+========================= */
+
+.contact-new {
+max-width: 1050px;
+margin: 0 auto;
+padding: 85px 34px 120px;
+}
+
+.contact-new-intro {
+margin-bottom: 65px;
+}
+
+.contact-new-intro h1 {
+font-family: Georgia, "Times New Roman", serif;
+font-size: clamp(58px, 8vw, 92px);
+line-height: 0.95;
+font-weight: 600;
+
+margin: 10px 0 30px;
+}
+
+.contact-new-lead {
+max-width: 680px;
+
+font-size: 19px;
+line-height: 1.7;
+
+color: var(--gray);
+}
+
+
+/* TWO LARGE PANELS */
+
+.contact-panels {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 25px;
+}
+
+.contact-panel {
+background: white;
+
+border: 1px solid var(--line);
+
+padding: 40px;
+
+min-height: 360px;
+}
+
+.contact-panel-label {
+color: var(--red);
+
+font-size: 12px;
+font-weight: bold;
+
+text-transform: uppercase;
+letter-spacing: 0.18em;
+
+margin: 0 0 25px;
+}
+
+.contact-panel h2 {
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 40px;
+line-height: 1.05;
+
+margin: 0 0 25px;
+}
+
+.contact-panel > p:not(.contact-panel-label) {
+color: var(--gray);
+
+font-size: 17px;
+line-height: 1.6;
+
+margin-bottom: 35px;
+}
+
+
+/* EMAIL */
+
+.contact-main-link {
+display: inline-block;
+
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 21px;
+
+color: var(--red);
+
+border-bottom: 1px solid var(--red);
+
+padding-bottom: 5px;
+}
+
+.contact-main-link:hover {
+color: var(--dark-red);
+}
+
+
+/* MATERIAL LINKS */
+
+.material-links {
+border-top: 1px solid var(--line);
+}
+
+.material-links a {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 18px 0;
+
+border-bottom: 1px solid var(--line);
+
+font-size: 16px;
+font-weight: 600;
+}
+
+.material-links a span {
+color: var(--red);
+
+font-family
