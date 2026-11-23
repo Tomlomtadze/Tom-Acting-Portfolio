@@ -958,3 +958,14 @@ font-weight: 600;
 color: var(--red);
 
 font-family
+.hero-headshot {
+flex: 0 1 430px;
+}
+
+.hero-headshot img {
+width: 100%;
+display: block;
+aspect-ratio: 4 / 5;
+object-fit: cover;
+object-position: center top;
+}
