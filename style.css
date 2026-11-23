@@ -955,7 +955,10 @@ font-weight: 600;
 }
 
 .material-links a span {
+.material-links a span {
 color: var(--red);
+}
+
 .headshot-page {
 max-width: 1200px;
 margin: 0 auto;
