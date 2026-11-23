@@ -19,8 +19,6 @@ color: #111;
 font-family: Arial, sans-serif;
 }
 
-/* TOP NAVIGATION */
-
 header {
 width: 100%;
 background: #f7f4ee;
@@ -47,7 +45,7 @@ text-decoration: none;
 .site-links {
 display: flex;
 align-items: center;
-gap: 42px;
+gap: 36px;
 }
 
 .site-links a {
@@ -55,7 +53,7 @@ position: relative;
 color: #777;
 text-decoration: none;
 text-transform: uppercase;
-letter-spacing: 1.5px;
+letter-spacing: 1.4px;
 font-size: 13px;
 padding-bottom: 7px;
 transition: 0.2s ease;
@@ -65,7 +63,19 @@ transition: 0.2s ease;
 color: #111;
 }
 
-/* PAGE */
+.site-links a.active {
+color: #111;
+}
+
+.site-links a.active::after {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 1px;
+background: #992f28;
+}
 
 .headshot-page {
 min-height: calc(100vh - 82px);
@@ -94,8 +104,6 @@ font-size: 46px;
 font-weight: normal;
 }
 
-/* PORTRAIT FRAME */
-
 .headshot-frame {
 width: 280px;
 padding: 11px;
@@ -116,10 +124,7 @@ object-fit: cover;
 object-position: center top;
 }
 
-/* MOBILE */
-
-@media (max-width: 700px) {
-
+@media (max-width: 800px) {
 .site-nav {
 flex-direction: column;
 gap: 18px;
@@ -127,7 +132,9 @@ padding: 22px 5%;
 }
 
 .site-links {
-gap: 24px;
+flex-wrap: wrap;
+justify-content: center;
+gap: 18px 24px;
 }
 
 .headshot-page {
@@ -162,12 +169,14 @@ TEMUR LOMTADZE
 <div class="site-links">
 <a href="film.html">Film</a>
 <a href="reels.html">Reels</a>
+<a href="headshot.html" class="active">Headshot</a>
+<a href="resume.html">Résumé</a>
 <a href="about.html">About</a>
+<a href="contact.html">Contact</a>
 </div>
 
 </nav>
 </header>
-
 
 <main class="headshot-page">
 
@@ -178,12 +187,10 @@ TEMUR LOMTADZE
 <h1>Temur Lomtadze</h1>
 
 <div class="headshot-frame">
-
 <img
 src="LomtadzeTemur_Headshot.jpg"
 alt="Temur Lomtadze Actor Headshot"
 >
-
 </div>
 
 </div>
