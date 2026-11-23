@@ -956,3 +956,27 @@ font-weight: 600;
 
 .material-links a span {
 color: var(--red);
+.headshot-page {
+max-width: 1200px;
+margin: 0 auto;
+padding: 80px 6%;
+text-align: center;
+}
+
+.headshot-page h1 {
+font-family: Georgia, serif;
+font-size: 48px;
+font-weight: normal;
+margin-bottom: 40px;
+}
+
+.headshot-photo {
+max-width: 550px;
+margin: 0 auto;
+}
+
+.headshot-photo img {
+width: 100%;
+height: auto;
+display: block;
+}
