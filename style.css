@@ -956,17 +956,3 @@ font-weight: 600;
 
 .material-links a span {
 color: var(--red);
-
-
-
-.hero-headshot {
-flex: 0 1 430px;
-}
-
-.hero-headshot img {
-width: 100%;
-display: block;
-aspect-ratio: 4 / 5;
-object-fit: cover;
-object-position: center top;
-}
