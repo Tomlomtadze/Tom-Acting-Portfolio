@@ -956,8 +956,11 @@ font-weight: 600;
 
 .material-links a span {
 color: var(--red);
+<div class="hero-headshot">
+<img src="headshot.jpg" alt="Temur Lomtadze Actor Headshot">
+</div>
 
-font-family
+
 .hero-headshot {
 flex: 0 1 430px;
 }
@@ -969,3 +972,4 @@ aspect-ratio: 4 / 5;
 object-fit: cover;
 object-position: center top;
 }
+
