@@ -7,7 +7,147 @@
 
 <title>Headshot | Temur Lomtadze</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+background: #f7f4ee;
+color: #111;
+font-family: Arial, sans-serif;
+}
+
+/* TOP NAVIGATION */
+
+header {
+width: 100%;
+background: #f7f4ee;
+border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.site-nav {
+max-width: 1400px;
+margin: 0 auto;
+padding: 26px 6%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.site-name {
+font-family: Georgia, serif;
+font-size: 22px;
+letter-spacing: 1px;
+color: #111;
+text-decoration: none;
+}
+
+.site-links {
+display: flex;
+align-items: center;
+gap: 42px;
+}
+
+.site-links a {
+position: relative;
+color: #777;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-size: 13px;
+padding-bottom: 7px;
+transition: 0.2s ease;
+}
+
+.site-links a:hover {
+color: #111;
+}
+
+/* PAGE */
+
+.headshot-page {
+min-height: calc(100vh - 82px);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 45px 20px 60px;
+}
+
+.headshot-content {
+text-align: center;
+}
+
+.eyebrow {
+margin: 0 0 10px;
+color: #992f28;
+font-size: 12px;
+letter-spacing: 4px;
+font-weight: 600;
+}
+
+.headshot-content h1 {
+margin: 0 0 30px;
+font-family: Georgia, serif;
+font-size: 46px;
+font-weight: normal;
+}
+
+/* PORTRAIT FRAME */
+
+.headshot-frame {
+width: 280px;
+padding: 11px;
+margin: 0 auto;
+background: #fff;
+border: 1px solid #ded9d0;
+box-shadow:
+0 18px 40px rgba(0,0,0,0.12),
+0 3px 10px rgba(0,0,0,0.06);
+transform: rotate(0.5deg);
+}
+
+.headshot-frame img {
+display: block;
+width: 100%;
+height: 365px;
+object-fit: cover;
+object-position: center top;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+.site-nav {
+flex-direction: column;
+gap: 18px;
+padding: 22px 5%;
+}
+
+.site-links {
+gap: 24px;
+}
+
+.headshot-page {
+min-height: auto;
+padding-top: 45px;
+}
+
+.headshot-content h1 {
+font-size: 38px;
+}
+
+.headshot-frame {
+width: 250px;
+}
+
+.headshot-frame img {
+height: 325px;
+}
+}
+</style>
 </head>
 
 <body>
@@ -15,7 +155,9 @@
 <header>
 <nav class="site-nav">
 
-<a href="index.html" class="site-name">TEMUR LOMTADZE</a>
+<a href="index.html" class="site-name">
+TEMUR LOMTADZE
+</a>
 
 <div class="site-links">
 <a href="film.html">Film</a>
@@ -25,53 +167,24 @@
 
 </nav>
 </header>
-<main style="
-text-align:center;
-padding:35px 20px 50px;
-max-width:900px;
-margin:0 auto;
-">
 
-<p style="
-color:#992f28;
-letter-spacing:4px;
-font-size:12px;
-margin:0 0 8px;
-">
-HEADSHOT
-</p>
 
-<h1 style="
-font-family:Georgia, serif;
-font-size:38px;
-font-weight:normal;
-margin:0 0 25px;
-">
-Temur Lomtadze
-</h1>
+<main class="headshot-page">
 
-<div style="
-width:260px;
-margin:0 auto;
-padding:10px;
-background:white;
-border:1px solid #ddd;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-">
+<div class="headshot-content">
+
+<p class="eyebrow">HEADSHOT</p>
+
+<h1>Temur Lomtadze</h1>
+
+<div class="headshot-frame">
 
 <img
 src="LomtadzeTemur_Headshot.jpg"
 alt="Temur Lomtadze Actor Headshot"
-width="260"
-height="340"
-style="
-width:260px;
-height:340px;
-object-fit:cover;
-object-position:center top;
-display:block;
-"
 >
+
+</div>
 
 </div>
 
